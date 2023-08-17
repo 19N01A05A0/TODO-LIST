@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>TODO</title>
+</head>
+<body>
+    <div class="heading">TODO LIST</div>
+    <div class="container m-5">
+        <div class="row">
+            <div class="card m-auto my-3" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">Add a task</h5>
+                  <a href="#" onclick="myFunction()" id="anchor"><img src="task_img.jfif"></a>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="container" id="task_form" style="display: none;">
+        <div class="mb-3 mx-5">
+            <label for="task" class="form-label">Task name</label>
+            <input type="text" class="form-control" id="task" placeholder="Enter task name">
+          </div>
+          <div class="mb-3 mx-5">
+            <label for="desc" class="form-label">Task desc</label>
+            <textarea class="form-control" id="desc" rows="3"></textarea>
+          </div>
+          <button class="mx-5" id="submit" type="submit">Submit</button>
+          <button class="mx-5" id="delete" type="submit">Delete</button>
+    </div>
+    <div class="container my-5 mx-5" style="background-color: antiquewhite;">
+        <h2>Lists of Tasks are:</h2>
+        
+        <button id="show-btn" >Show</button>
+        <button id="close" style="display: none">Close</button>
+        <br>
+        <div id="show-items" style="display: none">
+            Task  Name:<div id="taskname"></div>
+            <br>
+            Task Desc:<div id="taskdesc"></div>
+        </div>
+        
+    </div>
+    <script src="scripts.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </script>
+</body>
+</html>
